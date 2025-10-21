@@ -10,7 +10,7 @@ test.describe('Parameterized Search Tests', () => {
     testCases.forEach(({ input, expected }) => {
       test(`should display correct result for input "${input}"`, async ({ page }) => {
 
-        await page.goto('http://127.0.0.1:8081/dataDriven.html'); 
+        await page.goto('http://127.0.0.1:8080/dataDriven.html'); 
         
         await page.fill('input[name="search"]', input);
 
